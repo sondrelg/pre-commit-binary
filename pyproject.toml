@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pre-commit-binary"
+version = "0.1.0"
+description = ""
+authors = ["Sondre Lillebø Gundersen <sondrelg@live.no>"]
+readme = "README.md"
+packages = [{include = "main.py"}]
+
+[tool.poetry.scripts]
+pre-commit-binary = 'main:main'
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^3.2.2"
+requests = "^2.28.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

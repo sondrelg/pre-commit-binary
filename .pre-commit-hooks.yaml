@@ -1,0 +1,7 @@
+- id: pre-commit-binary
+  name: pre-commit binary
+  entry: pre-commit-binary
+  description: Caches and runs binary from a URL.
+  language: python
+  types: [ file ]
+  stages: [ commit ]
